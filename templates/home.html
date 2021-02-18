@@ -7,6 +7,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -43,7 +51,10 @@
                 </div>
             </div>
     </nav>
-    <img class="img1" src="{% static 'back.jpg' %}" alt="Italian Trulli">
+    <img class="img1" src="{% static 'back.png' %}" alt="Italian Trulli">
+    <p class="the">The</p>
+    <p class="name">&#9886; The Pizza Shop &#9887;</p>
+    <p class="Base_line">TAKEOUT & DELIVERY</p>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
@@ -54,12 +65,12 @@
     @media only screen and (min-width:980px) {
         .navbar-expand-lg .navbar-nav {
             flex-direction: row;
-            margin-left: 19%;
+            margin-left: 27%;
             font-family: 'Benne', serif;
         }
 
         .nav-item {
-            margin-right: 40%;
+            margin-right: 20%;
         }
     }
 
@@ -69,10 +80,58 @@
         border-color: rgba(255, 255, 255, .1);
     }
 
+    @media only screen and (width:1024px) {
+        .navbar-expand-lg .navbar-nav {
+            margin-left: 18%;
+        }
+    }
+
     /*Img1*/
     .img1 {
         width: 100%;
-        height: 80%;
+        height: 90%;
+    }
+
+    /* The */
+    .the {
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+        color: #ffffff;
+        font-size: 400%;
+        margin-top: -36%;
+
+    }
+
+    @media only screen and (max-width:980px) {
+        .the {
+
+            font-size: 157%;
+            margin-top: -43%;
+        }
+    }
+
+    /* shop name */
+    .name {
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 800%;
+        margin-top: -49px;
+    }
+
+    @media only screen and (max-width:980px) {
+        .name {
+            font-size: 200%;
+            margin-top: -23px;
+        }
+    }
+
+    /* Base_line */
+    .Base_line {
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Abril Fatface', cursive;
+        margin-top: -25px;
     }
 </style>
 
