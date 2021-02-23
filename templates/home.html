@@ -115,6 +115,54 @@
             <button class="book_now" type="submit" form="book_now" value="book_now">Book Now</button>
         </form>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="img_shower">
+        <div class="card" id="img_shower_id" style="width: 18rem;">
+            <img src="{% static '10.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+        <div class="card" id="img_shower_id" style="width: 18rem;">
+            <img src="{% static '2.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+        <div class="card" id="img_shower_id" style="width: 18rem;">
+            <img src="{% static '3.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+        <div class="card" id="img_shower_id" style="width: 18rem;">
+            <img src="{% static '5.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+        <div class="card" id="img_shower_id" style="width: 18rem;">
+            <img src="{% static '7.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+        <div class="card" id="img_shower_id" style="width: 18rem;">
+            <img src="{% static '12.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
@@ -319,6 +367,7 @@
         margin-left: 42%;
     }
 
+
     @media only screen and (max-width: 810px) {
         .our_story {
             margin-top: 1%;
@@ -371,7 +420,7 @@
         margin-top: -6%;
         font-size: 330%;
         font-family: 'Bebas Neue', cursive;
-        font-size: 301%;
+        font-size: 400%;
     }
 
     /* Our Story Img*/
@@ -522,9 +571,13 @@
 
 
     /* MAKE A RESERVATION*/
+    #MAKE_A_RESERVATION {
+        font-size: 400%;
+    }
+
     @media only screen and (max-width: 915px) {
         #MAKE_A_RESERVATION {
-            font-size: 175%;
+            font-size: 300%;
         }
     }
 
@@ -582,7 +635,7 @@
 
     @media only screen and (max-width: 2550px) and (min-width: 1500px) {
         .our_story {
-            margin-top: 11%;
+            margin-top: 8%;
             width: 15%;
             margin-left: 42%;
         }
@@ -643,7 +696,98 @@
     @media only screen and (max-width: 980px) {
         .form {
             display: grid;
+            margin-left: 36%;
+            width: 162%;
+            margin-top: 0%;
         }
+
+        #date {
+            margin-bottom: 2%;
+            width: 15%;
+            border: 3px solid #1D1B1B;
+        }
+
+        #time {
+            margin-bottom: 2%;
+            width: 15%;
+            border: 3px solid #1D1B1B;
+        }
+
+        #size {
+            margin-bottom: 2%;
+            width: 15%;
+            border: 3px solid #1D1B1B;
+        }
+
+        .book_now {
+            background-color: #1D1B1B;
+            text-align: center;
+            color: white;
+            width: 15%;
+            border: 3px solid #1D1B1B;
+        }
+    }
+
+    @media only screen and (width: 354px) {
+        .name {
+            font-size: 272%;
+            margin-top: -31px;
+        }
+
+        .btn {
+            margin-left: 34.4%;
+        }
+    }
+
+    @media only screen and (max-width: 590px) {
+        .form {
+            display: grid;
+            margin-left: 32%;
+            width: 196%;
+            margin-top: -4%;
+        }
+    }
+
+    @media only screen and (max-width: 477px) {
+        .form {
+            display: grid;
+            margin-left: 30%;
+            width: 226%;
+            margin-top: -4%;
+        }
+    }
+
+    @media only screen and (max-width: 468px) {
+        .form {
+            display: grid;
+            margin-left: 26%;
+            width: 246%;
+            margin-top: -4%;
+        }
+    }
+
+    @media only screen and (max-width: 300px) {
+        .form {
+            display: grid;
+            margin-left: 13%;
+            width: 428%;
+            margin-top: -4%;
+        }
+    }
+
+    /* img_shower */
+    @media only screen and(max-width: 1000px) {
+        .img_shower {
+            display: block;
+        }
+    }
+
+    .img_shower {
+        display: flex;
+    }
+
+    element.style {
+        width: 23rem;
     }
 </style>
 
