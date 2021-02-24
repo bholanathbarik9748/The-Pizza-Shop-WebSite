@@ -120,46 +120,66 @@
     <br>
     <br>
     <div class="img_shower">
-        <div class="card" id="img_shower_id" style="width: 18rem;">
-            <img src="{% static '10.jpg' %}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+        <div class="card-group">
+            <div class="card">
+                <img id="img_shower" src="{% static '1.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Our Aim</h5>
+                    <p class="card-text">To earn the respect of Our customers, we first have to
+                        respect those customers.Thats why we provide you pizza within 30 min on low cost with full
+                        respect and if you come to our shop then we deliver you order in 10 min</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
-        </div>
-        <div class="card" id="img_shower_id" style="width: 18rem;">
-            <img src="{% static '2.jpg' %}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+            <div class="card">
+                <img id="img_shower" src="{% static '8.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Type of Pizza</h5>
+                    <p class="card-text">we have almost all type of pizza for you like Neapolitan Pizza,Chicago
+                        Pizza,New York-Style Pizza,Sicilian Pizza,California Pizza,Detroit Pizza,St. Louis Pizza,Types
+                        of Pizza Crust</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
-        </div>
-        <div class="card" id="img_shower_id" style="width: 18rem;">
-            <img src="{% static '3.jpg' %}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+            <div class="card">
+                <img src="{% static '3.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
-        </div>
-        <div class="card" id="img_shower_id" style="width: 18rem;">
-            <img src="{% static '5.jpg' %}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+            <div class="card">
+                <img id="img_shower" src="{% static '17.png' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
-        </div>
-        <div class="card" id="img_shower_id" style="width: 18rem;">
-            <img src="{% static '7.jpg' %}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+            <div class="card">
+                <img src="{% static '15.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
-        </div>
-        <div class="card" id="img_shower_id" style="width: 18rem;">
-            <img src="{% static '12.jpg' %}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+            <div class="card">
+                <img src="{% static '16.png' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
         </div>
     </div>
@@ -776,18 +796,11 @@
     }
 
     /* img_shower */
-    @media only screen and(max-width: 1000px) {
-        .img_shower {
-            display: block;
+
+    @media only screen and (max-width: 800px) {
+        #img_shower {
+            display: none;
         }
-    }
-
-    .img_shower {
-        display: flex;
-    }
-
-    element.style {
-        width: 23rem;
     }
 </style>
 
