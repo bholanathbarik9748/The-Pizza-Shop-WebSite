@@ -6,3 +6,7 @@ from . import views
 urlpatterns = [
     path("", views.home, name="home")
 ]
+
+# urlpatterns = [
+#     path("OrderOnline/", views.OrderOnline, name="OrderOnline")
+# ]
