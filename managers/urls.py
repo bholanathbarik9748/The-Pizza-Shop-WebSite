@@ -4,9 +4,6 @@ from django.urls.conf import include
 from . import views
 
 urlpatterns = [
-    path("", views.home, name="home")
+    path("", views.home, name="home"),
+    path("OrderOnline/", views.OrderOnline, name="OrderOnline"),
 ]
-
-# urlpatterns = [
-#     path("OrderOnline/", views.OrderOnline, name="OrderOnline")
-# ]
