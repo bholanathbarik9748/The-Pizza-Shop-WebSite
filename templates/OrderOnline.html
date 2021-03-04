@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document</title>
+    <title>OrderOnline</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -88,7 +88,7 @@
     <p class="our_story_1">ORDER ONLINE</p>
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <button id="btn1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Hi! Guest
     </button>
 
@@ -111,21 +111,38 @@
             </div>
         </div>
     </div>
+    <br>
     <!-- menu -->
     <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+        <button id="btn2" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
             data-bs-toggle="dropdown" aria-expanded="false">
             Menu
         </button>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-            <li><a class="dropdown-item active" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">ANTIPASTO</a></li>
             <li>
                 <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            <li><a class="dropdown-item" href="#">PIZZA</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">SAMOSA</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">BARGER</a></li>
         </ul>
+    </div>
+
+    <!-- book -->
+    <div class="card w-75">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Button</a>
+            <input type="number" />
+        </div>
     </div>
 </body>
 <style>
@@ -246,6 +263,42 @@
             margin-top: -14%;
             font-size: 53%;
         }
+    }
+
+    /*Modal*/
+    #btn1 {
+        color: #1D1B1B;
+        background-color: #fff;
+        border-color: #1D1B1B;
+        margin-left: 22.4%;
+        margin-bottom: 0.1%;
+        margin-bottom: 0.3%;
+    }
+
+    .btn-primary:hover {
+        color: #1D1B1B;
+        background-color: #fff;
+        border-color: #1D1B1B;
+    }
+
+    .btn {
+        border: 3px solid transparent;
+    }
+
+    #btn2 {
+        color: #1D1B1B;
+        background-color: #fff;
+        border-color: #1D1B1B;
+        margin-left: 22.4%;
+        width: 6.1%;
+    }
+
+    /*Book*/
+
+    .w-75 {
+        width: 33% !important;
+        margin-left: 28.7%;
+        margin-top: -6%;
     }
 </style>
 
