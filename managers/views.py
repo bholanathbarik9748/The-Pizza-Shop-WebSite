@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import item
 
 # Create your views here.
 
@@ -9,4 +9,7 @@ def home(request):
 
 
 def OrderOnline(request):
-    return render(request, 'OrderOnline.html')
+    i = item()
+    i.name = 'pizza1'
+    i.price = 12
+    return render(request, 'OrderOnline.html', {'i': i})

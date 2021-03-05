@@ -138,10 +138,9 @@
     <!-- book -->
     <div class="card w-75">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Button</a>
-            <input type="number" />
+            <h5 class="card-title">{{i.name}}</h5>
+            <p class="card-text">₹{{i.price}}</p>
+            <input id="quan" type="number" min="1" placeholder="Quantity" />
         </div>
     </div>
 </body>
@@ -296,9 +295,167 @@
     /*Book*/
 
     .w-75 {
-        width: 33% !important;
-        margin-left: 28.7%;
+        width: 42% !important;
+        margin-left: 31%;
         margin-top: -6%;
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    /*Button*/
+    @media only screen and (max-width: 1425px) {
+        #btn2 {
+            width: 6.6%;
+        }
+    }
+
+    @media only screen and (max-width: 1320px) {
+        #btn2 {
+            width: 7%;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .w-75 {
+            margin-left: 32%;
+        }
+
+        #btn2 {
+            width: 7.9%;
+        }
+    }
+
+    @media only screen and (max-width: 1320px) {
+        .w-75 {
+            margin-left: 33%;
+        }
+
+        #btn2 {
+            width: 9.5%;
+        }
+    }
+
+    @media only screen and (max-width: 790px) {
+        #btn2 {
+            width: 11.5%;
+            margin-left: 62%;
+            margin-top: -19%;
+        }
+
+        #btn1 {
+            margin-left: 22.4%;
+            margin-top: -12%;
+        }
+
+        .w-75 {
+            width: 47% !important;
+            margin-left: 26%;
+            margin-top: -2%;
+        }
+    }
+
+    @media only screen and (max-width: 667px) {
+        #btn1 {
+            margin-left: 22.4%;
+            margin-top: -5%;
+        }
+
+        #btn2 {
+            width: 15.5%;
+            margin-left: 60%;
+            margin-top: -13%;
+        }
+    }
+
+    @media only screen and (max-width: 667px) {
+        #btn2 {
+            width: 16.5%;
+            margin-left: 59%;
+            margin-top: -15%;
+        }
+    }
+
+    @media only screen and (max-width: 667px) {
+        #btn2 {
+            width: 16.5%;
+            margin-left: 59%;
+            margin-top: -15%;
+        }
+    }
+
+    @media only screen and (max-width: 515px) {
+        #btn2 {
+            width: 19.5%;
+            margin-left: 55%;
+            margin-top: -17%;
+        }
+
+        #quan {
+            width: 99.5%;
+        }
+    }
+
+    @media only screen and (max-width: 415px) {
+        #btn1 {
+            margin-left: 22.4%;
+            margin-top: -5%;
+            width: 17%;
+            font-size: 56%;
+        }
+
+        #btn2 {
+            margin-left: 58.4%;
+            margin-top: -17%;
+            width: 17%;
+            font-size: 56%;
+        }
+
+        .w-75 {
+            width: 94% !important;
+            margin-left: 3%;
+            margin-top: -2%;
+        }
+    }
+
+    @media only screen and (max-width: 355px) {
+        #btn1 {
+            margin-left: 22.4%;
+            margin-top: -5%;
+            width: 17%;
+            font-size: 44%;
+        }
+
+        #btn2 {
+            margin-left: 58.4%;
+            margin-top: -20%;
+            width: 17%;
+            font-size: 44%;
+        }
+    }
+
+    @media only screen and (max-width: 316px) {
+        #btn1 {
+            margin-left: 22.4%;
+            margin-top: -5%;
+            width: 17%;
+            font-size: 36%;
+        }
+
+        #btn2 {
+            margin-left: 58.4%;
+            margin-top: -20%;
+            width: 17%;
+            font-size: 36%;
+        }
+    }
+
+    @media only screen and (max-width: 316px) {
+        #btn2 {
+            margin-left: 58.4%;
+            margin-top: -26%;
+            width: 17%;
+            font-size: 36%;
+        }
     }
 </style>
 
