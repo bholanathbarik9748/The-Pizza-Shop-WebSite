@@ -5,6 +5,7 @@ from django.db import models
 # class
 
 
-class item:
-    name: str
-    price: int
+class item(models.Model):
+
+    name = models.CharField(max_length=200)
+    price = models.IntegerField(blank=True, null=True)
