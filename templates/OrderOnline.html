@@ -136,13 +136,20 @@
     </div>
 
     <!-- book -->
+    {% for item in i %}
     <div class="card w-75">
         <div class="card-body">
-            <h5 class="card-title">{{i.name}}</h5>
-            <p class="card-text">₹{{i.price}}</p>
+            <h5 class="card-title">{{item.name}}</h5>
+            <p class="card-text">₹{{item.price}}</p>
             <input id="quan" type="number" min="1" placeholder="Quantity" />
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    {% endfor %}
 </body>
 <style>
     /*NavBar*/

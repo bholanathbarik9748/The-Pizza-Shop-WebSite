@@ -9,7 +9,5 @@ def home(request):
 
 
 def OrderOnline(request):
-    i = item()
-    i.name = 'pizza1'
-    i.price = 12
-    return render(request, 'OrderOnline.html', {'i': i})
+    res = item.objects.all()
+    return render(request, 'OrderOnline.html', {'i': res})
