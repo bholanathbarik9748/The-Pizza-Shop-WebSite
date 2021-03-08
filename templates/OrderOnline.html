@@ -13,6 +13,8 @@
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -119,37 +121,178 @@
             Menu
         </button>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-            <li><a class="dropdown-item" href="#">ANTIPASTO</a></li>
+            <li><a class="dropdown-item" href="#antipasto">ANTIPASTO</a></li>
             <li>
                 <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">PIZZA</a></li>
+            <li><a class="dropdown-item" href="#pizza">PIZZA</a></li>
             <li>
                 <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">SAMOSA</a></li>
+            <li><a class="dropdown-item" href="#samosa">SAMOSA</a></li>
             <li>
                 <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">BARGER</a></li>
+            <li><a class="dropdown-item" href="#barger">BARGER</a></li>
         </ul>
     </div>
 
     <!-- book -->
-    {% for item in i %}
-    <div class="card w-75">
-        <div class="card-body">
-            <h5 class="card-title">{{item.name}}</h5>
-            <p class="card-text">₹{{item.price}}</p>
-            <input id="quan" type="number" min="1" placeholder="Quantity" />
+    <!-- Pizza -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="pizza">
+        <p class="our_story_1" id="un">PIZZA</p>
+        <br>
+        <br>
+        <br>
+        {% for item in i %}
+        <div class="card w-75" id="un">
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">₹{{item.price}}</p>
+                <input id="quan" type="number" min="1" placeholder="Quantity" />
+            </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     {% endfor %}
+    <!-- ANTIPASTO -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="antipasto">
+        <p class="our_story_1" id="un">ANTIPASTO</p>
+        <br>
+        <br>
+        <br>
+        {% for item in a %}
+        <div class="card w-75" id="un">
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">₹{{item.price}}</p>
+                <input id="quan" type="number" min="1" placeholder="Quantity" />
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    {% endfor %}
+    <!--BURGUR -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="barger">
+        <p class="our_story_1" id="un">BURGUR</p>
+        <br>
+        <br>
+        <br>
+        {% for item in b %}
+        <div class="card w-75">
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">₹{{item.price}}</p>
+                <input id="quan" type="number" min="1" placeholder="Quantity" />
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    {% endfor %}
+    <!-- SAMOSA -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="samosa">
+        <p class="our_story_1" id="un">SAMOSA</p>
+
+        <br>
+        <br>
+        <br>
+        {% for item in s %}
+        <div class="card w-75">
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">₹{{item.price}}</p>
+                <input id="quan" type="number" min="1" placeholder="Quantity" />
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    {% endfor %}
+
+
+    <div id="Reserv">
+        <img class="Reservations" src="{% static 'Reservations.png' %}" alt="Into">
+        <p class="our_story_1" id="MAKE_A_RESERVATION">MAKE A RESERVATION</p>
+        <br>
+        <form class="form">
+            <input type="date" id="date" name="date">
+            <select id="time" name="time">
+                <option value="mercedes">Time</option>
+                <option value="mercedes">10AM - 11 AM</option>
+                <option value="mercedes">11AM - 12 AM</option>
+                <option value="mercedes">12AM - 1PM</option>
+                <option value="mercedes">1PM - 2PM</option>
+                <option value="mercedes">2PM - 3PM</option>
+                <option value="mercedes">3PM - 4PM</option>
+                <option value="mercedes">4PM - 5PM</option>
+                <option value="mercedes">6PM - 7PM</option>
+                <option value="mercedes">7PM - 8PM</option>
+                <option value="mercedes">8PM - 9PM</option>
+                <option value="mercedes">9PM - 10PM</option>
+            </select>
+            <select id="size" name="size">
+                <option value="mercedes">Pizza Size</option>
+                <option value="mercedes">1 person (4pic/person)</option>
+                <option value="mercedes">2 person (4pic/person)</option>
+                <option value="mercedes">3 person (4pic/person)</option>
+                <option value="mercedes">4 person (4pic/person)</option>
+                <option value="mercedes">5 person (4pic/person)</option>
+                <option value="mercedes">6 person (4pic/person)</option>
+            </select>
+            <button class="book_now" type="submit" form="book_now" value="book_now">Book Now</button>
+        </form>
+    </div>
 </body>
 <style>
     /*NavBar*/
@@ -462,6 +605,267 @@
             margin-top: -26%;
             width: 17%;
             font-size: 36%;
+        }
+    }
+
+    #un {
+        text-decoration: underline;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    /*Reservations*/
+    .Reservations {
+        width: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+    }
+
+    @media only screen and (max-width: 1180px) {
+        .our_story_1 {
+            margin-top: -6%;
+            font-size: 286%;
+        }
+    }
+
+    @media only screen and (max-width: 720px) {
+        .our_story_1 {
+            margin-top: -6%;
+            font-size: 167%;
+        }
+    }
+
+    @media only screen and (max-width: 360px) {
+        .our_story_1 {
+            margin-top: -41%;
+            font-size: 167%;
+        }
+    }
+
+    .form {
+        display: flex;
+        margin-left: 17%;
+        padding: 2px 20px;
+    }
+
+    #date {
+        margin-right: 5%;
+        width: 15%;
+        border: 3px solid #1D1B1B;
+    }
+
+    #time {
+        margin-right: 5%;
+        width: 15%;
+        border: 3px solid #1D1B1B;
+    }
+
+    #size {
+        margin-right: 5%;
+        width: 15%;
+        border: 3px solid #1D1B1B;
+    }
+
+    .book_now {
+        background-color: #1D1B1B;
+        text-align: center;
+        color: white;
+        width: 15%;
+        border: 3px solid #1D1B1B;
+    }
+
+    @media only screen and (max-width: 980px) {
+        .form {
+            display: grid;
+            margin-left: 36%;
+            width: 162%;
+            margin-top: 0%;
+        }
+
+        #date {
+            margin-bottom: 2%;
+            width: 15%;
+            border: 3px solid #1D1B1B;
+        }
+
+        #time {
+            margin-bottom: 2%;
+            width: 15%;
+            border: 3px solid #1D1B1B;
+        }
+
+        #size {
+            margin-bottom: 2%;
+            width: 15%;
+            border: 3px solid #1D1B1B;
+        }
+
+        .book_now {
+            background-color: #1D1B1B;
+            text-align: center;
+            color: white;
+            width: 15%;
+            border: 3px solid #1D1B1B;
+        }
+    }
+
+    @media only screen and (width: 354px) {
+        .name {
+            font-size: 272%;
+            margin-top: -31px;
+        }
+
+        .btn {
+            margin-left: 34.4%;
+        }
+    }
+
+    @media only screen and (max-width: 590px) {
+        .form {
+            display: grid;
+            margin-left: 32%;
+            width: 196%;
+            margin-top: -4%;
+        }
+    }
+
+    @media only screen and (max-width: 477px) {
+        .form {
+            display: grid;
+            margin-left: 30%;
+            width: 226%;
+            margin-top: -4%;
+        }
+    }
+
+    @media only screen and (max-width: 468px) {
+        .form {
+            display: grid;
+            margin-left: 26%;
+            width: 246%;
+            margin-top: -4%;
+        }
+    }
+
+    @media only screen and (max-width: 300px) {
+        .form {
+            display: grid;
+            margin-left: 13%;
+            width: 428%;
+            margin-top: -4%;
+        }
+    }
+
+    /* img_shower */
+    @media only screen and (max-width: 800px) {
+        #img_shower {
+            display: none;
+        }
+    }
+
+    .private_img {
+        width: 10%;
+        margin-left: 45%;
+    }
+
+
+    element.style {}
+
+    [type=button]:not(:disabled),
+    [type=reset]:not(:disabled),
+    [type=submit]:not(:disabled),
+    button:not(:disabled) {
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #1d1b1b;
+        border-color: #ffffff;
+    }
+
+    .btn {
+        margin-left: 46.4%;
+        margin-top: 1%;
+    }
+
+    .btn-group-lg>.btn,
+    .btn-lg {
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: .3rem;
+    }
+
+    .btn-primary {
+        color: #1d1b1b;
+        background-color: #fffdfd;
+        border-color: #1d1b1b;
+    }
+
+    .btn {
+        margin-left: 46.7%;
+        margin-top: 1%;
+    }
+
+    @media only screen and (max-width: 980px) {
+        .into_line {
+            text-align: center;
+            padding: 4px 297px;
+        }
+
+        .btn {
+            margin-left: 43.7%;
+            margin-top: 1%;
+        }
+
+        .btn {
+            margin-left: 42.4%;
+            margin-top: 2%;
+            width: 131px;
+            height: 46px;
+        }
+    }
+
+    @media only screen and (max-width: 665px) {
+        .into_line {
+            text-align: center;
+            padding: 4px 162px;
+        }
+
+        .btn {
+            margin-left: 38.4%;
+            margin-top: 2%;
+            width: 131px;
+            height: 46px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .into_line {
+            text-align: center;
+            padding: 4px 100px;
+        }
+
+        .btn {
+            margin-left: 32.4%;
+            margin-top: 2%;
+            width: 131px;
+            height: 46px;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .into_line {
+            text-align: center;
+            padding: 4px 70px;
+        }
+
+        .btn {
+            margin-left: 30.4%;
+            margin-top: 2%;
+            width: 131px;
+            height: 46px;
         }
     }
 </style>
