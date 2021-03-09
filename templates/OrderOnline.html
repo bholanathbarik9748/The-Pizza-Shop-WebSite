@@ -147,20 +147,14 @@
     <br>
     <div id="pizza">
         <p class="our_story_1" id="un">PIZZA</p>
-        <br>
-        <br>
-        <br>
         {% for item in i %}
-        <div class="card w-75" id="un">
+        <div class="card w-75">
             <div class="card-body">
                 <h5 class="card-title">{{item.name}}</h5>
                 <p class="card-text">₹{{item.price}}</p>
                 <input id="quan" type="number" min="1" placeholder="Quantity" />
             </div>
         </div>
-        <br>
-        <br>
-        <br>
         <br>
         <br>
     </div>
@@ -172,27 +166,16 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div id="antipasto">
         <p class="our_story_1" id="un">ANTIPASTO</p>
-        <br>
-        <br>
-        <br>
         {% for item in a %}
-        <div class="card w-75" id="un">
+        <div class="card w-75">
             <div class="card-body">
                 <h5 class="card-title">{{item.name}}</h5>
                 <p class="card-text">₹{{item.price}}</p>
                 <input id="quan" type="number" min="1" placeholder="Quantity" />
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
         <br>
     </div>
     {% endfor %}
@@ -203,15 +186,8 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div id="barger">
         <p class="our_story_1" id="un">BURGUR</p>
-        <br>
-        <br>
-        <br>
         {% for item in b %}
         <div class="card w-75">
             <div class="card-body">
@@ -220,10 +196,6 @@
                 <input id="quan" type="number" min="1" placeholder="Quantity" />
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
         <br>
     </div>
     {% endfor %}
@@ -234,16 +206,8 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div id="samosa">
         <p class="our_story_1" id="un">SAMOSA</p>
-
-        <br>
-        <br>
-        <br>
         {% for item in s %}
         <div class="card w-75">
             <div class="card-body">
@@ -253,14 +217,10 @@
             </div>
         </div>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
     </div>
     {% endfor %}
 
-
+    <!-- reserve -->
     <div id="Reserv">
         <img class="Reservations" src="{% static 'Reservations.png' %}" alt="Into">
         <p class="our_story_1" id="MAKE_A_RESERVATION">MAKE A RESERVATION</p>
@@ -268,7 +228,7 @@
         <form class="form">
             <input type="date" id="date" name="date">
             <select id="time" name="time">
-                <option value="mercedes">Time</option>
+                <option value="mercedes">Time</option> -->
                 <option value="mercedes">10AM - 11 AM</option>
                 <option value="mercedes">11AM - 12 AM</option>
                 <option value="mercedes">12AM - 1PM</option>
@@ -278,8 +238,8 @@
                 <option value="mercedes">4PM - 5PM</option>
                 <option value="mercedes">6PM - 7PM</option>
                 <option value="mercedes">7PM - 8PM</option>
-                <option value="mercedes">8PM - 9PM</option>
-                <option value="mercedes">9PM - 10PM</option>
+                < <option value="mercedes">8PM - 9PM</option>
+                    <option value="mercedes">9PM - 10PM</option>
             </select>
             <select id="size" name="size">
                 <option value="mercedes">Pizza Size</option>
@@ -866,6 +826,70 @@
             margin-top: 2%;
             width: 131px;
             height: 46px;
+        }
+    }
+
+    .our_story_1 {
+        margin-bottom: 1%;
+    }
+
+    .ard w-75 {
+        margin-bottom: 20%;
+    }
+
+    .w-75 {
+        width: 42% !important;
+        margin-left: 31%;
+        margin-top: -6%;
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 10%;
+    }
+
+    @media only screen and (max-width: 770px) {
+        .our_story_1 {
+            margin-bottom: 10%;
+        }
+
+        element {
+            margin-top: 9%;
+        }
+    }
+
+    @media only screen and (max-width: 1173px) {
+        .our_story_1 {
+            margin-bottom: -9%;
+        }
+    }
+
+    #un {
+        margin-bottom: 6%;
+    }
+
+    /* Reservations */
+    .Reservations {
+        width: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+        margin-bottom: 7%;
+        margin-top: -7%;
+    }
+
+    @media only screen and (max-width: 1059px) {
+        .our_story_1 {
+            margin-bottom: 2%;
+        }
+
+        .Reservations {
+            margin-bottom: 0%;
+        }
+    }
+
+    @media only screen and (max-width: 335px) {
+        .Reservations {
+            margin-top: 30%;
         }
     }
 </style>
