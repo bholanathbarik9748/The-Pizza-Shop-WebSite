@@ -14,3 +14,11 @@ def OrderOnline(request):
     bur = BURGUR.objects.all()
     sam = SAMOSA.objects.all()
     return render(request, 'OrderOnline.html', {'i': res, 'a': ant, 'b': bur, 's': sam})
+
+
+def creteAcc(request):
+    return render(request, 'creteAcc.html')
+
+
+def loginAcc(request):
+    return render(request, 'loginAcc.html')
