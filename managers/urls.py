@@ -9,5 +9,6 @@ urlpatterns = [
     path("", views.home, name="home"),
     path("creteAcc/", views.creteAcc, name="creteAcc"),
     path("loginAcc/", views.loginAcc, name="loginAcc"),
+    path("menu/", views.menu, name="menu"),
     path("OrderOnline/", views.OrderOnline, name="OrderOnline"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -60,7 +60,7 @@
                                 href="{% url 'OrderOnline' %}">OrderOnline</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                            <a class="nav-link active" aria -current="page" href="{% url 'menu' %}">Menu</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link active" aria-current="page" href="#Reserv">Reservation</a>
@@ -93,8 +93,12 @@
     <br>
     <br>
     <img class="Main1" href="#" src="{% static 'main1.png' %}" alt="Main1">
-    <img class="Main1_i" href="#" src="{% static 'Main1_i.png' %}" alt="Main1">
-    <img class="Main1_ii" href="#" src="{% static 'Main1_ii.png' %}" alt="Main1">
+    <a href="{% url 'menu' %}">
+        <img class="Main1_i" src="{% static 'Main1_i.png' %}" alt="Main1">
+    </a>
+    <a href="{% url 'menu' %}">
+        <img class="Main1_ii" src="{% static 'Main1_ii.png' %}" alt="Main1">
+    </a>
     <br>
     <br>
     <br>

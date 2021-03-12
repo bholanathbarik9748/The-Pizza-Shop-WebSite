@@ -22,3 +22,11 @@ def creteAcc(request):
 
 def loginAcc(request):
     return render(request, 'loginAcc.html')
+
+
+def menu(request):
+    res = item.objects.all()
+    ant = ANTIPASTO.objects.all()
+    bur = BURGUR.objects.all()
+    sam = SAMOSA.objects.all()
+    return render(request, 'menu.html', {'i': res, 'a': ant, 'b': bur, 's': sam})
