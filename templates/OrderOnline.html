@@ -92,6 +92,12 @@
     <button id="btn1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Hi! Guest
     </button>
+    <br>
+    <a href="{% url 'payment' %}">
+        <button id="btn1" type="button" class="btn btn-primary">
+            Book Now
+        </button>
+    </a>
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -263,7 +269,8 @@
                 <option value="mercedes">5 person (4pic/person)</option>
                 <option value="mercedes">6 person (4pic/person)</option>
             </select>
-            <button class="book_now" type="submit" form="book_now" value="book_now">Book Now</button>
+            <button class="book_now" type="submit" form="book_now" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop1" value="book_now">Book Now</button>
         </form>
     </div>
     <br>
@@ -335,6 +342,28 @@
         <br>
         <br>
     </div>
+    <!-- MOdel -->
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img class="pop" src="{% static 'pop.png' %}" alt="">
+                <p class="pop_low">
+                    Sorry,We're currently not accepting reservations online.
+                </p>
+                <h6 class="pop_low_1">Please call us to complete your reservation:
+                    <h6>(800)-800-0000</h6>
+                </h6>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>

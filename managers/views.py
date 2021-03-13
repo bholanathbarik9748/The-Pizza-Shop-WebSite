@@ -24,6 +24,13 @@ def loginAcc(request):
     return render(request, 'loginAcc.html')
 
 
+def payment(request):
+    return render(request, 'payment.html')
+
+def cp(request):
+    return render(request, 'cp.html')
+
+
 def menu(request):
     res = item.objects.all()
     ant = ANTIPASTO.objects.all()
