@@ -7,7 +7,6 @@ from django.conf import settings
 
 urlpatterns = [
     path("", views.home, name="home"),
-    path("creteAcc/", views.creteAcc, name="creteAcc"),
     path("loginAcc/", views.loginAcc, name="loginAcc"),
     path("menu/", views.menu, name="menu"),
     path("payment/", views.payment, name="payment"),

@@ -17,25 +17,6 @@ def OrderOnline(request):
     return render(request, 'OrderOnline.html', {'i': res, 'a': ant, 'b': bur, 's': sam})
 
 
-def creteAcc(request):
-
-    if request.method == 'POST':
-        first_name = request.POST['First_Name']
-        Last_Name = request.POST['Last_Name']
-        email = request.POST['email']
-        psw = request.POST['psw']
-        psw_repeat = request.POST['psw_repeat']
-
-        user = User.objects.create_user(
-            first_name=first_name, Last_Name=Last_Name, email=email, psw=psw, psw_repeat=psw_repeat)
-        user.save()
-
-        print('User Created')
-        return redirect('')
-    else:
-        return render(request, 'creteAcc.html')
-
-
 def loginAcc(request):
     return render(request, 'loginAcc.html')
 
