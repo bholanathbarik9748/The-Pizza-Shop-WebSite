@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User, auth
-
+from django.contrib import messages
 # Create your views here.
 
 
@@ -15,12 +15,31 @@ def regester(request):
         password = request.POST['password']
         password1 = request.POST['password1']
 
-        user = User.objects.create_user(
-            username=username, password=password, email=email, first_name=first_name, last_name=last_name
-        )
+        if password == password1:
+            if User.objects.filter(username=username).exists():
+                messages.info(request, 'User-Name Already Available...')
+                print("User-Name Already Available...")
+                return redirect('/UserAcc/regester/')
 
-        user.save()
-        print('User Created')
-        return redirect('/OrderOnline/')
+            elif User.objects.filter(email=email).exists():
+                messages.info(request, 'Email Id Already Available...')
+                print("Email Id Already Available...")
+                return redirect('/UserAcc/regester/')
+
+            else:
+                user = User.objects.create_user(
+                    username=username, password=password, email=email, first_name=first_name, last_name=last_name
+                )
+            user.save()
+            print('User Created')
+            return redirect('/OrderOnline/')
+        else:
+            messages.info(request, 'Password not match !!!!')
+            print("Password not match !!!!")
+            return redirect('/UserAcc/regester/')
     else:
         return render(request, 'regester.html')
+
+
+def loginAcc(request):
+    return render(request, 'loginAcc.html')
