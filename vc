@@ -1,0 +1,179 @@
+[33mcommit 33c6bc7f1cb8f31e108abe3ff90ce8af21307065[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Wed Mar 17 01:16:21 2021 +0530
+
+    set message to already pannel pop ups and crete log in page but not connected to database
+
+[33mcommit 6e19221d8449529239c3e18eb15249f9336a4f9a[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Tue Mar 16 01:29:57 2021 +0530
+
+    connect crete account page to data-base now user can be crete user_id's ,check Successful git add .git add . and improve docs
+
+[33mcommit eb03cbc8e145de35fd0346e418f0c328470942cd[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Mon Mar 15 01:13:28 2021 +0530
+
+    try to connect creteAcc page to html but it is not work right now and improve docs
+
+[33mcommit ef8332b6bdafd4e9efbbbaac914c56ad4f181f36[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Sun Mar 14 01:38:20 2021 +0530
+
+    crete payment option and improve docs
+
+[33mcommit ea26a5d1e888667aa178fc4e48d92357094fc891[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Sat Mar 13 01:09:26 2021 +0530
+
+    crete Menu page and connect to databse and admin panal and and improve docs
+
+[33mcommit d16b50c0b87c291924f6e29dd5d668395f78f3e7[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Fri Mar 12 01:17:08 2021 +0530
+
+    crete sign In and Log In html page and connect to django server and improve docs
+
+[33mcommit 7c5ca01cea05f6b3fa4ffc762a7fb19ab6ba57b9[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Thu Mar 11 01:09:16 2021 +0530
+
+    set all pop-ups in Home & OrderOnline page  and improve docs
+
+[33mcommit dfb07e425c1a92e6514d2f61b28cd7ff9674382f[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Wed Mar 10 01:08:32 2021 +0530
+
+    set Orderonline page responsive_ness , reserbation and improve pop_up in Home page
+
+[33mcommit ec73b7ae41533903ff82024c9a4605a66d24e48a[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Tue Mar 9 01:12:14 2021 +0530
+
+    set other menu bar connection to database and improve reservation section and improve docs
+
+[33mcommit 9592c9f35f6e9a8dd20e6c24f2c487aa291900dc[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Mon Mar 8 01:23:55 2021 +0530
+
+    crete admin pannel , Add and Fetch data from Database in OrderOnline menu and improve docs
+
+[33mcommit efd82d62605f194aa0602ef49406c416c5dbd75e[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Sun Mar 7 01:43:46 2021 +0530
+
+    Fix Models and Migrations and now Row is available in Database and improve docs
+
+[33mcommit fa38d2a581ece269f3f8a5c7c13fc2740eaffc5c[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Sun Mar 7 01:28:00 2021 +0530
+
+    connect Models and Migrations with data_base
+
+[33mcommit 7ce49d1d199f532d9de01987eaab38e06b730395[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Sat Mar 6 01:23:57 2021 +0530
+
+    set sign in,menu button responsive ness ,item card Passing Dynamic Data set and improve docs
+
+[33mcommit 620dd69f1ead9739665779f84b99f44572f0b9f7[m
+Author: Bholanath Barik <bholanathbarik9748@gmail.com>
+Date:   Fri Mar 5 01:02:23 2021 +0530
+
+    set log in butoon and menu buttton but its now not work able and improve docs
+
+[33mcommit c040ce9658981e56d97231d8e5d8b424eedd2e46[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Thu Mar 4 01:08:28 2021 +0530
+
+    crete database set and set table ,set guast button and drowable button and improve docs
+
+[33mcommit ab420bd0642a635493a1ebb74b98cf7593bfbab8[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Wed Mar 3 00:59:45 2021 +0530
+
+    set OrderOnline page in backend and set backround on this page and improve docs
+
+[33mcommit 39e169137f8fe87d4fc94637d99cf26d181000a7[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Mon Mar 1 00:53:26 2021 +0530
+
+    fully set home page and its responsiveness all button according to this page index is also work and improves docs
+
+[33mcommit c18262ea62de4bc136f7f284712ef365a7dde118[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Sun Feb 28 02:20:51 2021 +0530
+
+    set almost booter but subscribe function not set perfectly and also not responsive ,improve docs
+
+[33mcommit 6079f16cfbe25bc05970ca6ccc25bb037d9d7288[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Sat Feb 27 01:16:15 2021 +0530
+
+    set COME GRAB A SLICE! , add address and location and improve docs
+
+[33mcommit 71448137ebf4032caf65c74408489adb30db5a92[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Fri Feb 26 01:16:13 2021 +0530
+
+    set card responsive ness and set privert party section but it not resposnsive perfectly and improve docs
+
+[33mcommit 95a4d3b56d234f9aac9328ddda7aaf787e432236[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Thu Feb 25 01:20:05 2021 +0530
+
+    crete card lib but card lib is not complite and improve docs
+
+[33mcommit a79157f597385fcc27f8ca15286d17c0427e9dba[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Wed Feb 24 01:14:39 2021 +0530
+
+    fully set (reservation) form ,also shower card ready but topics not set and impove docs:
+
+[33mcommit 5e97097c292862b6b1c4eb9e380a5f0f1f00f099[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Tue Feb 23 01:13:21 2021 +0530
+
+    set responsive-ness , create (make a reservation) Form but now it's not responsive and improve docs
+
+[33mcommit c9cba0414139096d9313e5331eb3474e827f6d83[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Mon Feb 22 01:15:01 2021 +0530
+
+    set Main Img amd resevation topic its also responsive right Now and improve docs
+
+[33mcommit 80b57076f2259e983f216eac3125f827f505c355[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Sun Feb 21 01:23:39 2021 +0530
+
+    set resposive-ness,set (Our Story) section and its resposnsive-ness and impove docs
+
+[33mcommit 5a94f9e1b3d72c13ee40c64707d302e46a9e451c[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Sat Feb 20 01:12:54 2021 +0530
+
+    set back pic and improve docs
+
+[33mcommit e0d7c211f9c74aa645dfebfbfd754ceb54fe751a[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Fri Feb 19 01:12:19 2021 +0530
+
+    set front img and also set front text and set resposive-ness and improve docs
+
+[33mcommit df5033a1ada280acf5057feeffde09fb7cbe395d[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Thu Feb 18 01:09:58 2021 +0530
+
+    navbar is fully ready expect href tags and into img in also set and improve docs
+
+[33mcommit 2085bf6c172a5ef9ab17ee870ddf5e924325da8a[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Wed Feb 17 01:27:34 2021 +0530
+
+    set navbar and improve docs
+
+[33mcommit 0c1807eae59421b6514d3a79c40e2503962bd52d[m
+Author: Bholanath Barik <71944044+bholanathbarik9748@users.noreply.github.com>
+Date:   Tue Feb 16 01:22:45 2021 +0530
+
+    set all like project,app_manager,templates and static files and crete design in figma

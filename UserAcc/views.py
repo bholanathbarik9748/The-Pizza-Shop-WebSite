@@ -42,4 +42,17 @@ def regester(request):
 
 
 def loginAcc(request):
-    return render(request, 'loginAcc.html')
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+
+        user = auth.authenticate(username=username, password=password)
+
+        if user is not None:
+            auth.login(request, user)
+            return redirect('/OrderOnline/')
+        else:
+            messages.info(request, 'User not Available...!!!!')
+            return redirect('/UserAcc/loginAcc/')
+    else:
+        return render(request, 'loginAcc.html')
